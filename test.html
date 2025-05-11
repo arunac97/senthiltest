@@ -1,14 +1,115 @@
-<html>
-    <title>My Web Page</title>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a simple web page.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Visual Design Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: white;
+      color: #000;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p.intro {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+      background: white;
+    }
+    .card:hover {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .button {
+      background: black;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Visual Design Portfolio</h1>
+  <p class="intro">
+    Welcome! I'm a visual designer passionate about creating imaginative and aesthetic visuals.
+    Here's a glimpse of my self-initiated projects that blend creativity, detail, and storytelling.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <img src="images/animal-posters.jpg" alt="Imaginative Animal Posters" />
+      <div class="card-content">
+        <h2>Imaginative Animal Posters</h2>
+        <p>A series of digital posters exploring animal shapes, patterns, and surreal concepts.</p>
+        <button class="button">View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ui-concepts.jpg" alt="Fictional App UI Concepts" />
+      <div class="card-content">
+        <h2>Fictional App UI Concepts</h2>
+        <p>Conceptual mobile app UIs for futuristic and story-driven apps.</p>
+        <button class="button">View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/typography.jpg" alt="Experimental Typography" />
+      <div class="card-content">
+        <h2>Experimental Typography</h2>
+        <p>Creative typographic layouts combining letters with illustrative elements.</p>
+        <button class="button">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
 </html>
